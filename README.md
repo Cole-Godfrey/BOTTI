@@ -1,0 +1,1 @@
+This is a fully functional AI that can be implemented for any first-person shooter. It has real-time object detection that allows it to point the crosshair and shoot at enemies. Also has basic movement and free looking. NOTE: This was built off of https://github.com/McDaived/AIMi, so credits to him for most of the real-time object detection.
