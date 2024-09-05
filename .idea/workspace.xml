@@ -5,15 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="226074e1-bbb2-4eb3-b33d-c34adb73cb8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AIMI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AIMi/lib/detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/AIMi/lib/detect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AIMi/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/AIMi/start.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpu test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/detect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/coco-dataset.labels" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/yolov3-tiny.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/yolov3-tiny.weights" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/daemon.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/debian/changelog.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/debian/compat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/debian/control" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/debian/copyright" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/debian/nvidia-docker2.install" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/debian/nvidia-docker2.lintian-overrides" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/debian/prepare" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/debian/rules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/docker/Dockerfile.amazonlinux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/docker/Dockerfile.centos" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/docker/Dockerfile.debian" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/docker/Dockerfile.opensuse-leap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/docker/Dockerfile.ubuntu" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/docker/docker.mk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/nvidia-docker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/rpm/SOURCES/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/rpm/SPECS/nvidia-docker2.spec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nvidia docker/rpm/changelog.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/grab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/inputs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/assets/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AIMi" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +54,8 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/AIMi" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -51,25 +78,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.detect.executor&quot;: &quot;Run&quot;,
-    &quot;Python.look.executor&quot;: &quot;Run&quot;,
-    &quot;Python.move.executor&quot;: &quot;Run&quot;,
-    &quot;Python.start.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.detect.executor": "Run",
+    "Python.look.executor": "Run",
+    "Python.move.executor": "Run",
+    "Python.start.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\coleg\OneDrive\Desktop\AIMI" />
+      <recent name="C:\Users\coleg\OneDrive\Desktop\AIMI\generalfpsai" />
       <recent name="C:\Users\coleg\OneDrive\Desktop\AIMI\AIMi" />
     </key>
   </component>
@@ -97,17 +126,40 @@
       <workItem from="1725525217340" duration="7710000" />
       <workItem from="1725533030594" duration="156000" />
       <workItem from="1725533194370" duration="1346000" />
-      <workItem from="1725574316860" duration="869000" />
+      <workItem from="1725574316860" duration="4550000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AIMI$detect.coverage" NAME="detect Coverage Results" MODIFIED="1725532887796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AIMi/lib" />
-    <SUITE FILE_PATH="coverage/AIMI$look.coverage" NAME="look Coverage Results" MODIFIED="1725534158208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AIMi" />
-    <SUITE FILE_PATH="coverage/AIMI$start.coverage" NAME="start Coverage Results" MODIFIED="1725533631192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AIMi" />
-    <SUITE FILE_PATH="coverage/AIMI$move.coverage" NAME="move Coverage Results" MODIFIED="1725532146596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AIMi" />
+    <SUITE FILE_PATH="coverage/AIMI$look.coverage" NAME="look Coverage Results" MODIFIED="1725578395003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generalfpsai/AIMi" />
+    <SUITE FILE_PATH="coverage/AIMI$start.coverage" NAME="start Coverage Results" MODIFIED="1725578387160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generalfpsai/AIMi" />
+    <SUITE FILE_PATH="coverage/AIMI$move.coverage" NAME="move Coverage Results" MODIFIED="1725578527639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generalfpsai/AIMi" />
   </component>
 </project>
