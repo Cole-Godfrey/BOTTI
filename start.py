@@ -1,7 +1,6 @@
 import subprocess
 import os
 import interception
-interception.move_to(100,100)
 
 subprocess.call(["pip", "install", "-r", "assets/requirements.txt"])
 from utils import inputs
