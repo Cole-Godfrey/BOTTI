@@ -1,3 +1,4 @@
+import random
 import sys
 import time
 import timeit
@@ -46,7 +47,7 @@ def aimbot(ENABLE_AIMBOT):
     
     RESET = '\033[0m'#dont touch it 
     
-    ACTIVATION_RANGE = 250 #box in the center of your screen, lower value of pixel makes the capture faster, for example 250 mean 250x250 pixel box.
+    ACTIVATION_RANGE = 300 #box in the center of your screen, lower value of pixel makes the capture faster, for example 250 mean 250x250 pixel box.
 
     labelsPath = os.path.sep.join([YOLO_DIRECTORY, "coco-dataset.labels"])
     LABELS = open(labelsPath).read().strip().split("\n")
@@ -108,7 +109,7 @@ def aimbot(ENABLE_AIMBOT):
         color = RED if aimbot_paused else GREEN
         print("\nAimbot : " + color + status + RESET)
         if not aimbot_paused:
-          duration = 100  
+          duration = 100
           freq = 440
           winsound.Beep(freq, duration)
     keyboard.add_hotkey('F4', toggle_aimbot)
@@ -178,12 +179,11 @@ def aimbot(ENABLE_AIMBOT):
                 if ENABLE_AIMBOT and bestMatch == confidences[i]:
                     mouseX = origbox[0] + (x + w/1.5)
                     mouseY = origbox[1] + (y + h/5)
-                    sensitivity = -0.5
+                    sensitivity = -1
                     interception.move_relative(int((960 - mouseX) * sensitivity), int((540 - mouseY) * sensitivity))
-                    if ((960 -mouseX) * sensitivity)**2 + ((520 - mouseY) * sensitivity)**2 < 150:
+                    rand = random.randint(1, 100)
+                    if rand > 90:
                         interception.left_click()
-                        time.sleep(0.3)
-
 
 
         cv2.imshow("Gui Objects Detector", frame)

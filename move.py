@@ -9,21 +9,21 @@ interception.auto_capture_devices()
 FRAME_DURATION_SECONDS = 1
 
 # Define movement functions
-def move_forward():
+def move_forward(t):
     interception.key_down("w")
-    time.sleep(FRAME_DURATION_SECONDS)
+    time.sleep(t)
     interception.key_up("w")
-def move_left():
+def move_left(t):
     interception.key_down("a")
-    time.sleep(1)
+    time.sleep(t)
     interception.key_up("a")
-def move_right():
+def move_right(t):
     interception.key_down("d")
-    time.sleep(1)
+    time.sleep(t)
     interception.key_up("d")
-def move_backward():
+def move_backward(t):
     interception.key_down("s")
-    time.sleep(1)
+    time.sleep(t)
     interception.key_up("s")
 def move_forward_right():
     interception.key_down("w")
@@ -97,6 +97,8 @@ def right_click():
 # Map random numbers to corresponding actions
 options = {
     0: move_forward,
+    9: move_forward,
+    10: move_forward,
     1: move_backward,
     2: move_left,
     3: move_right,
@@ -105,20 +107,15 @@ options = {
     6: move_backward_left,
     7: move_backward_right,
     8: jump,
-    9: use_c,
-    10: move_slow_forward,
-    11: use_q,
-    12: move_slow_forward,
-    13: use_e,
-    14: move_slow_forward,
-    15: use_x,
+    11: use_c,
+    12: use_e,
+    13: use_q,
+    14: use_x,
+
 }
 
 def main():
-    time.sleep(10) # Initial delay
+    time.sleep(5) # Initial delay
     while True:
-        rand = random.randint(0, len(options) - 1)
-        options[rand]()
 
-if __name__ == '__main__':
-    main()
+main()
