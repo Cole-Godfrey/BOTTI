@@ -47,7 +47,7 @@ def aimbot(ENABLE_AIMBOT):
     
     RESET = '\033[0m'#dont touch it 
     
-    ACTIVATION_RANGE = 300 #box in the center of your screen, lower value of pixel makes the capture faster, for example 250 mean 250x250 pixel box.
+    ACTIVATION_RANGE = 250 #box in the center of your screen, lower value of pixel makes the capture faster, for example 250 mean 250x250 pixel box.
 
     labelsPath = os.path.sep.join([YOLO_DIRECTORY, "coco-dataset.labels"])
     LABELS = open(labelsPath).read().strip().split("\n")
@@ -113,6 +113,7 @@ def aimbot(ENABLE_AIMBOT):
           freq = 440
           winsound.Beep(freq, duration)
     keyboard.add_hotkey('F4', toggle_aimbot)
+    toggle_aimbot()
     
     
     def on_click(x, y, button, pressed):
@@ -179,10 +180,9 @@ def aimbot(ENABLE_AIMBOT):
                 if ENABLE_AIMBOT and bestMatch == confidences[i]:
                     mouseX = origbox[0] + (x + w/1.5)
                     mouseY = origbox[1] + (y + h/5)
-                    sensitivity = -1
+                    sensitivity = -0.3
                     interception.move_relative(int((960 - mouseX) * sensitivity), int((540 - mouseY) * sensitivity))
-                    rand = random.randint(1, 100)
-                    if rand > 90:
+                    if ((960 - mouseX) * sensitivity) ** 2 + ((520 - mouseY) * sensitivity) ** 2 < 150:
                         interception.left_click()
 
 
