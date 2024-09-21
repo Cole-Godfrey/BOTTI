@@ -1,15 +1,77 @@
-BOTTI is a fully functional AI that can be implemented for any first-person shooter (although it does so astoundingly horribly). It has real-time object detection that allows it to point the crosshair and shoot at enemies. Also has basic movement and free looking. NOTE: This was built off of https://github.com/McDaived/AIMi, so credits to him for most of the real-time object detection.
+# BOTTI: AI Bot for First-Person Shooters
 
-WARNING
-This program is not meant to simulate a human playing VALORANT or any other game. This program will lock on and shake around enemies it sees. Because of this, if you go into a game, there is a VERY HIGH CHANCE THAT YOU WILL GET BANNED if you attempt to use this in an online game, so use this at your own risk.
+BOTTI is a fully functional AI designed to be implemented in first-person shooter games. It utilizes advanced machine learning techniques for intelligent gameplay, including real-time object detection, navigation, and ability usage.
 
-To run this project, you will need to do the following:
+**Important:** This project builds upon [AIMi by McDaived](https://github.com/McDaived/AIMi), which provides most of the real-time object detection functionality. Credit to McDaived for this component.
 
-1. Clone this repository
-2. Install interception driver - since VALORANT (and probably other games) has security measures to prevent pyautogui and pynput from working, you need to install the interception driver, which essentially allows us to directly control input devices so that we can execute key presses and mouse movement as if we were typing/moving the devices literally. It can be found at https://github.com/oblitum/Interception
-3. MAKE SURE VALORANT IS ALREADY LOADED AND IN A GAME/FIRING RANGE! Once you run the main script, after 10 seconds your mouse and keyboard will be moving on its own (inputs sent by move.py and look.py), so if you are not in the game you will be typing random shit and your mouse will be moving across the screen.
-4. run absolutemain.py
+## ⚠️ Disclaimer
 
-To stop the program it is kinda messy. Since it is moving your mouse and keyboard, you will have to fight against it to stop absolutemain.py in your IDE. I plan on implementing a quit command eventually.
+BOTTI is not intended to simulate human gameplay in games like VALORANT or any other online game. The AI will exhibit behaviors that may be considered inhuman. **Using this in online games will likely result in a ban.** Use this program at your own risk.
 
-I may add a GUI or make this an executable in the future for easier usage, but right now I'm focused on making BOTTI become a somewhat capable player.
+## Features
+
+- **Real-Time Object Detection:** Detects enemies and aims the crosshair using YOLO-based CNN.
+- **Intelligent Navigation:** Uses a Deep Q Network (DQN) for map navigation.
+- **Ability Usage:** Leverages DQN for strategic ability usage in VALORANT.
+- **Basic Movement:** Moves and looks around freely.
+- **Automated Shooting:** Fires when an enemy is detected.
+
+## New Feature: Deep Q Network (DQN)
+
+We've recently implemented a Deep Q Network, a type of Convolutional Neural Network, to enhance BOTTI's capabilities:
+
+- **Improved Navigation:** The DQN allows BOTTI to navigate VALORANT maps more effectively.
+- **Strategic Ability Usage:** BOTTI can now make intelligent decisions about when and how to use abilities.
+- **Integration with Existing Systems:** The DQN works alongside our YOLO-based object detection system, combining high-level strategy with precise aiming and shooting.
+
+## Installation
+
+### Prerequisites
+
+- **Interception Driver:** Many games, including VALORANT, have security measures that block Python libraries like `pyautogui` and `pynput`. To bypass these restrictions, you'll need to install the [Interception Driver](https://github.com/oblitum/Interception), which allows for direct control over input devices (keyboard and mouse).
+
+### Steps
+
+1. **Clone this Repository**
+    ```bash
+    git clone https://github.com/your-username/BOTTI.git
+    ```
+   
+2. **Install the Interception Driver**  
+   Follow the instructions provided in the [Interception GitHub Repository](https://github.com/oblitum/Interception) to install the driver. This is required to control the mouse and keyboard inputs directly.
+
+3. **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Start VALORANT**  
+   Ensure VALORANT is running and that you're in a game or the firing range. BOTTI will begin controlling your mouse and keyboard after 10 seconds, so be ready!
+
+5. **Run the Script**
+    ```bash
+    python absolutemain.py
+    ```
+
+6. **Stopping the Program**  
+   Press `Ctrl + C` in the terminal running the script to stop BOTTI. If this doesn't work, you may need to force close the program or restart your computer.
+
+## Planned Features
+
+- **Fine-tuning of DQN:** Continuous improvement of the neural network for better decision-making.
+- **Graphical User Interface (GUI):** For improved usability and real-time control.
+- **Executable Version:** To allow running the program without needing Python or an IDE.
+- **Multi-game Support:** Adapting BOTTI for use in various FPS games.
+
+## Contribution
+
+Feel free to open issues or contribute to the project by submitting pull requests. Suggestions and improvements are welcome, especially in the areas of machine learning optimization and game-specific strategies!
+
+## Acknowledgements
+
+- [McDaived](https://github.com/McDaived) for the original AIMi project
+- The open-source community for various machine learning and computer vision libraries used in this project
+
+## License
+
+[MIT License](LICENSE)
