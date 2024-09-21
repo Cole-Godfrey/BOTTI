@@ -11,7 +11,9 @@ import ctypes
 import os
 import signal
 import numpy as np
+import pynput
 import keyboard
+from pynput.mouse import Listener
 import winsound
 import interception
 
