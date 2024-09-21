@@ -539,7 +539,7 @@ if __name__ == "__main__":
     save_dir = "val_saved_models"
     os.makedirs(save_dir, exist_ok=True)
     save_path = os.path.join(save_dir, "val_dqn_model")
-    load_path = 'val_dqn_model_episode_30.pth'  #set specific path if you want to load saved model
+    load_path = None  #set specific path if you want to load saved model
 
     #adjust episodes and steps_per_episode as needed
     train(episodes=10, steps_per_episode=50, save_path=save_path, load_path=load_path)
