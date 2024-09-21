@@ -3,7 +3,7 @@ imutils
 mss
 numpy
 opencv-python
-pynput
+interception
 six
 termcolor
 colored
