@@ -9,7 +9,6 @@ termcolor
 colored
 keyboard
 mouse
-cv2
 torch
 scikit-image
 matplotlib
