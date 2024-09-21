@@ -22,11 +22,11 @@ Also, **THIS IS NOT A HACK!!!** This bot sucks at playing VALORANT compared to h
 
 I've recently implemented a Deep Q Network, a type of Convolutional Neural Network, to enhance BOTTI's capabilities:
 
-- **Improved Navigation:** The DQN allows BOTTI to navigate VALORANT maps more effectively.
-- **Strategic Ability Usage:** BOTTI can now make intelligent decisions about when and how to use abilities.
-- **Integration with Existing Systems:** The DQN works alongside the YOLO-based object detection system, combining high-level strategy with precise aiming and shooting.
+- **Navigation:** BOTTI can now move! The DQN allows it to navigate 3D environments from a 2D screen capture. Note that this is still in early stages, so it isn't great at doing this yet.
+- **Strategic Ability Usage:** BOTTI can now make intelligent decisions about when and how to use abilities. Also still in development, right now it may be randomly spamming abilities (I don't know why).
+- **Integration with Existing Systems:** The DQN works alongside the YOLO-based object detection system, combining high-level strategy (bit of a stretch) with precise aiming and shooting (actually accurate).
 
-NOTE: I have trained an agent using this DQN and it has been decent, however I will be improving on it further. Since GitHub doesn't allow files larger than 25MB, I can't upload the trained model (almost 500MB), so you will have to train it on your own. I recommend training it for at least 100 episodes, which for me took about 8 hours. I trained it for about 30 on VALORANT and it seemed to not get stuck, but also is just aimlessly wandering around the environment. If anyone has a solution to upload the model, please let me know.
+NOTE: I have trained an agent using this DQN and it has been decent, however I will be improving on it further. Since GitHub doesn't allow files larger than 25MB, I can't upload the trained model (almost 500MB), so you will have to train it on your own. I recommend training it for at least 100 episodes, which for me took about 8 hours. I trained it for about 30 on VALORANT and it seemed to not get stuck, but also is just aimlessly wandering around the environment. If anyone has a solution to upload the model, please let me know. For now, you will have to train it by yourself.
 
 ## Installation
 
@@ -59,18 +59,18 @@ NOTE: I have trained an agent using this DQN and it has been decent, however I w
     ```
 
 6. **Stopping the Program**  
-   This part is pretty messy. You will have to fight BOTTI for control over your mouse and keyboard if you would like to terminate the program and it has not         finished training. I will implement an easier way to stop it in the future but for now please remember this before you hit run.
+   This part is pretty messy. You will have to fight BOTTI for control over your mouse and keyboard if you would like to terminate the program and it has not finished training. I will implement an easier way to     stop it in the future but for now please remember this before you hit run.
 
 ## Planned Features
 
-- **Fine-tuning of DQN:** Continuous improvement of the neural network for better decision-making.
-- **Graphical User Interface (GUI):** For improved usability and real-time control.
-- **Executable Version:** To allow running the program without needing Python or an IDE.
-- **Multi-game Support:** Adapting BOTTI for use in various FPS games.
+- **Fine-tuning of DQN:** The current method of training put simply is to reward BOTTI for making a completely different image appear on the screen. I use structural similarity to determine how similar the image                           is to the previous, and reward/punish the agent based on the result. This is currently what is causing the AI to sometimes spam abilities (since it makes the screen a lot different), so                           more than likely I will be changing the reward system in the future.
+- **Graphical User Interface (GUI):** This would make it so much easier to use BOTTI. Definitely on my list of things to do, but won't do this until BOTTI actually figures out how to be competent at playing.
+- **Executable Version:** To allow running the program without needing Python or an IDE. Also not gonna do this until BOTTI figures out how to play FPS games somewhat well.
+- **Multi-game Support:** Adapting BOTTI for use in various FPS games. This is pretty easy since navigation and object detection can be used in any game, but not super high on my priority list.
 
 ## Contribution
 
-Feel free to open issues or contribute to the project by submitting pull requests. Suggestions and improvements are welcome, especially in the areas of machine learning optimization and game-specific strategies!
+Feel free to open issues or contribute to the project by submitting pull requests. Suggestions and improvements are welcome, especially in the areas of machine learning optimization and game-specific strategies! If anyone reading this knows what I should do in terms of optimizing movement.py to train BOTTI well, please tell me!
 
 ## Acknowledgements
 
