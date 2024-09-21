@@ -18,7 +18,7 @@ BOTTI is not intended to simulate human gameplay in games like VALORANT or any o
 
 ## New Feature: Deep Q Network (DQN)
 
-We've recently implemented a Deep Q Network, a type of Convolutional Neural Network, to enhance BOTTI's capabilities:
+I've recently implemented a Deep Q Network, a type of Convolutional Neural Network, to enhance BOTTI's capabilities:
 
 - **Improved Navigation:** The DQN allows BOTTI to navigate VALORANT maps more effectively.
 - **Strategic Ability Usage:** BOTTI can now make intelligent decisions about when and how to use abilities.
@@ -44,6 +44,7 @@ We've recently implemented a Deep Q Network, a type of Convolutional Neural Netw
     ```bash
     pip install -r requirements.txt
     ```
+    Please note that I have not updated dependencies for the CNN, so you may need to install additional libraries if the program does not run.
 
 4. **Start VALORANT**  
    Ensure VALORANT is running and that you're in a game or the firing range. BOTTI will begin controlling your mouse and keyboard after 10 seconds, so be ready!
@@ -54,7 +55,7 @@ We've recently implemented a Deep Q Network, a type of Convolutional Neural Netw
     ```
 
 6. **Stopping the Program**  
-   Press `Ctrl + C` in the terminal running the script to stop BOTTI. If this doesn't work, you may need to force close the program or restart your computer.
+   This part is pretty messy. You will have to fight BOTTI for control over your mouse and keyboard if you would like to terminate the program and it has not         finished training. I will implement an easier way to stop it in the future but for now please remember this before you hit run.
 
 ## Planned Features
 
