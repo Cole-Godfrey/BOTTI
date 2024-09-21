@@ -8,6 +8,8 @@ BOTTI is a fully functional AI designed to be implemented in first-person shoote
 
 BOTTI is not intended to simulate human gameplay in games like VALORANT or any other online game. The AI will exhibit behaviors that may be considered inhuman. **Using this in online games will likely result in a ban.** Use this program at your own risk.
 
+Also, **THIS IS NOT A HACK!!!** This bot sucks at playing VALORANT compared to humans, so it will not be actually good at playing the game - yet. If you would like, AIMi is just the object detection and aims your mouse at enemy players it detects, so you could use that, but I'm not held responsible if you get banned and I am in no way endorsing cheating.
+
 ## Features
 
 - **Real-Time Object Detection:** Detects enemies and aims the crosshair using YOLO-based CNN.
@@ -46,7 +48,7 @@ NOTE: I have trained an agent using this DQN and it has been decent, however I w
     ```bash
     pip install -r assets/requirements.txt
     ```
-    Please note that I have not updated dependencies for the CNN, so you may need to install additional libraries if the program does not run.
+    Please note that I am not sure if I included all libraries, so please submit an issue or pull request if the setup of BOTTI is not properly working.
 
 4. **Start VALORANT**  
    Ensure VALORANT is running and that you're in a game or the firing range. BOTTI will begin controlling your mouse and keyboard after 10 seconds, so be ready!
