@@ -1,7 +1,6 @@
-# BOTTI: AI Bot for First-Person Shooters
+# BOTTI: AI Bot for First-Person Shooters (Current Version 2.0.0)
 
-BOTTI is a fully functional AI designed to be implemented in first-person shooter games. It utilizes real-time object detection, navigation, and ability usage through various machine learning techniques.
-
+BOTTI is a fully functional AI designed to be implemented in first-person shooter games. Currently BOTTI can aim, shoot, move, look, and use abilities.
 **Important:** This project builds upon [AIMi by McDaived](https://github.com/McDaived/AIMi), which provides most of the real-time object detection functionality. Credit to McDaived for this component.
 
 ## ⚠️ Disclaimer
