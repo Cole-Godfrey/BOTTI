@@ -23,7 +23,7 @@ Also, **THIS IS NOT A HACK!!!** This bot sucks at playing VALORANT compared to h
 I've recently implemented a Deep Q Network, a type of Convolutional Neural Network, to enhance BOTTI's capabilities:
 
 - **Navigation:** BOTTI can now move! The DQN allows it to navigate 3D environments from a 2D screen capture. Note that this is still in early stages, so it isn't great at doing this yet.
-- **Strategic Ability Usage:** BOTTI can now make intelligent decisions about when and how to use abilities. Also still in development, right now it may be randomly spamming abilities (I don't know why).
+- **Strategic Ability Usage:** BOTTI can now make intelligent decisions about when and how to use abilities. Also still in development, right now it may be randomly spamming abilities.
 - **Integration with Existing Systems:** The DQN works alongside the YOLO-based object detection system, combining high-level strategy (bit of a stretch) with precise aiming and shooting (actually accurate).
 
 NOTE: I have trained an agent using this DQN and it has been decent, however I will be improving on it further. Since GitHub doesn't allow files larger than 25MB, I can't upload the trained model (almost 500MB), so you will have to train it on your own. I recommend training it for at least 100 episodes, which for me took about 8 hours. I trained it for about 30 on VALORANT and it seemed to not get stuck, but also is just aimlessly wandering around the environment. If anyone has a solution to upload the model, please let me know. For now, you will have to train it by yourself.
