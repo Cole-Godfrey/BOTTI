@@ -44,7 +44,7 @@ NOTE: I have trained an agent using this DQN and it has been decent, however I w
 
 3. **Install Dependencies**
     ```bash
-    pip install -r requirements.txt
+    pip install -r assets/requirements.txt
     ```
     Please note that I have not updated dependencies for the CNN, so you may need to install additional libraries if the program does not run.
 
