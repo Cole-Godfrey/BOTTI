@@ -12,3 +12,4 @@ mouse
 torch
 scikit-image
 matplotlib
+pynput
