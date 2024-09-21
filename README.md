@@ -36,7 +36,7 @@ NOTE: I have trained an agent using this DQN and it has been decent, however I w
 
 1. **Clone this Repository**
     ```bash
-    git clone https://github.com/your-username/BOTTI.git
+    git clone https://github.com/Cole-Godfrey/BOTTI.git
     ```
    
 2. **Install the Interception Driver**  
