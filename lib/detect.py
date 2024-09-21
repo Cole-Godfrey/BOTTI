@@ -2,7 +2,6 @@ import random
 import sys
 import time
 import timeit
-
 from termcolor import colored
 from utils.grab import screen
 import cv2
