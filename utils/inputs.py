@@ -3,7 +3,6 @@ from lib.detect import position
 import _thread
 import ctypes
 import imutils
-import pynput
 
 if __name__ == "__aimbot__":
     print("Do not run this file directly.")
