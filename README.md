@@ -20,7 +20,7 @@ Also, **THIS IS NOT A HACK!!!** This bot sucks at playing VALORANT compared to h
 
 ## New Feature: Deep Q Network (DQN)
 
-I've recently implemented a Deep Q Network, a type of Convolutional Neural Network, to enhance BOTTI's capabilities:
+I've recently implemented a Deep Q Network to enhance BOTTI's capabilities:
 
 - **Navigation:** BOTTI can now move! The DQN allows it to navigate 3D environments from a 2D screen capture. Note that this is still in early stages, so it isn't great at doing this yet.
 - **Strategic Ability Usage:** BOTTI can now make intelligent decisions about when and how to use abilities. Also still in development, right now it may be randomly spamming abilities.
